@@ -2,6 +2,11 @@
 
 ## Project: Bay Area housing price prediction
 Application for predicting housing price for Bay Area based on the data collected since 1990 by using ------ model. 
+Housing affordability  is function of factors like,
+    1. Population Growth,
+    2. New Housing Constrction(permits),
+    3. Median Household income,
+    4. Median Household Price 
 
 ### Description
 Data
