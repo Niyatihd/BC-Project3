@@ -1,0 +1,15 @@
+Metro,MSA_forIA,Year,Median_Contract_Rent,Median_Contract_Rent_IA,Median_Contract_Rent_PercentChg_1970,Median_Contract_Rent_IA_PercentChg_1970,Source
+Bay Area,San Francisco,1970,131.12,904,0,0,Census1970_2010counties
+Bay Area,San Francisco,1980,291.81,891,1.23,-0.01,Census1980_2010counties
+Bay Area,San Francisco,1990,635.6,1247,3.85,0.38,Census1990_2010counties
+Bay Area,San Francisco,2000,900.74,1321,5.87,0.46,Census2000_2010counties
+Bay Area,San Francisco,2006,1112.35,1375,7.48,0.52,ACS_B25058_1YR
+Bay Area,San Francisco,2007,1154.94,1388,7.81,0.54,ACS_B25058_1YR
+Bay Area,San Francisco,2008,1211.96,1425,8.24,0.58,ACS_B25058_1YR
+Bay Area,San Francisco,2009,1231.93,1431,8.4,0.58,ACS_B25058_1YR
+Bay Area,San Francisco,2010,1235.78,1419,8.42,0.57,ACS_B25058_1YR
+Bay Area,San Francisco,2011,1270.39,1417,8.69,0.57,ACS_B25058_1YR
+Bay Area,San Francisco,2012,1329.92,1448,9.14,0.6,ACS_B25058_1YR
+Bay Area,San Francisco,2013,1375.5,1466,9.49,0.62,ACS_B25058_1YR
+Bay Area,San Francisco,2014,1487,1526,10.34,0.69,ACS_B25058_1YR
+Bay Area,San Francisco,2015,1581,1581,11.06,0.75,ACS_B25058_1YR
