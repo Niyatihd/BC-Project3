@@ -30,8 +30,10 @@ Housing affordability is a function of factors like
 The interactive app will help user to predict Median Housing price at Bay Area level as well as County level based on the year of interest.
 
 Possible Visulaizations:
-~ (Median Home Price or Housing Affordability Index(HAI)) vs. Population Growth
-~ (Median Home Price or Housing Affordability Index(HAI)) vs. No. of Housing Units
+
+(Median Home Price or Housing Affordability Index(HAI)) vs. Population Growth
+
+(Median Home Price or Housing Affordability Index(HAI)) vs. No. of Housing Units
 
 Tools used:
 ~ Data clean up and parsing with Jupyter Notebook using Pandas, numpy & OS library.
