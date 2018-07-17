@@ -9,7 +9,8 @@
 Application for predicting housing price for Bay Area based on the data collected since 1990 by using Linear Regression model.
 
 ### Hypothesis
-Housing affordability  is function of factors like,
+Housing affordability  is function of factors like
+
     1. Population Growth,
     2. New Housing Constrction(permits),
     3. Median Household income,
