@@ -1,0 +1,253 @@
+Year,Area,Num_Employers,Num_Employees,AvgAnnualPay
+1990,"Alameda County, California",30484,595141,27260
+1990,"Contra Costa County, California",18462,297074,27299
+1990,"Marin County, California",8706,97553,26119
+1990,"Napa County, California",3591,45481,21416
+1990,"San Francisco County, California",30081,581626,31272
+1990,"San Mateo County, California",17125,310320,29827
+1990,"Santa Clara County, California",34806,855974,32353
+1990,"Solano County, California",5620,98877,23581
+1990,"Sonoma County, California",11939,147161,22317
+1991,"Alameda County, California",35264,589348,29262
+1991,"Contra Costa County, California",21559,289264,28891
+1991,"Marin County, California",9714,96971,27763
+1991,"Napa County, California",3929,45447,22207
+1991,"San Francisco County, California",33755,571191,33464
+1991,"San Mateo County, California",19672,283160,30433
+1991,"Santa Clara County, California",39938,823193,34416
+1991,"Solano County, California",6758,96970,24309
+1991,"Sonoma County, California",13539,146822,23419
+1992,"Alameda County, California",37575,580372,30739
+1992,"Contra Costa County, California",23509,290580,30769
+1992,"Marin County, California",10182,95239,29109
+1992,"Napa County, California",4137,45402,23451
+1992,"San Francisco County, California",35853,536833,35941
+1992,"San Mateo County, California",20753,292966,33659
+1992,"Santa Clara County, California",41569,801343,37071
+1992,"Solano County, California",7331,98619,25636
+1992,"Sonoma County, California",14389,146291,24353
+1993,"Alameda County, California",38998,581604,31202
+1993,"Contra Costa County, California",24487,289035,31685
+1993,"Marin County, California",10622,96137,29225
+1993,"Napa County, California",4192,45122,23863
+1993,"San Francisco County, California",37013,531539,36970
+1993,"San Mateo County, California",21452,289875,34749
+1993,"Santa Clara County, California",42923,798033,38131
+1993,"Solano County, California",7605,98609,25918
+1993,"Sonoma County, California",14795,149546,24634
+1994,"Alameda County, California",38190,582410,32175
+1994,"Contra Costa County, California",23813,289653,32090
+1994,"Marin County, California",10617,98233,30126
+1994,"Napa County, California",4090,45332,24516
+1994,"San Francisco County, California",36473,525870,38319
+1994,"San Mateo County, California",21300,293164,35758
+1994,"Santa Clara County, California",43061,811151,39107
+1994,"Solano County, California",7336,104365,26839
+1994,"Sonoma County, California",14483,150219,25156
+1995,"Alameda County, California",41139,604087,33263
+1995,"Contra Costa County, California",25605,292247,33003
+1995,"Marin County, California",11483,100731,31552
+1995,"Napa County, California",4363,46875,25500
+1995,"San Francisco County, California",38878,528833,39708
+1995,"San Mateo County, California",23078,300725,37176
+1995,"Santa Clara County, California",46295,834956,42892
+1995,"Solano County, California",7939,101726,25784
+1995,"Sonoma County, California",15527,153880,26212
+1996,"Alameda County, California",40636,620381,34505
+1996,"Contra Costa County, California",24776,296299,34338
+1996,"Marin County, California",11226,101916,33368
+1996,"Napa County, California",4283,49569,26091
+1996,"San Francisco County, California",38505,542721,41535
+1996,"San Mateo County, California",22708,316412,39584
+1996,"Santa Clara County, California",46423,886560,44891
+1996,"Solano County, California",7801,101488,25749
+1996,"Sonoma County, California",15153,163065,26924
+1997,"Alameda County, California",39571,631383,37045
+1997,"Contra Costa County, California",23672,306701,36192
+1997,"Marin County, California",10706,103781,35228
+1997,"Napa County, California",4143,52782,27179
+1997,"San Francisco County, California",37604,554574,44655
+1997,"San Mateo County, California",21920,330092,43151
+1997,"Santa Clara County, California",45610,928587,48774
+1997,"Solano County, California",7598,103369,27114
+1997,"Sonoma County, California",14563,171128,28759
+1998,"Alameda County, California",43683,651492,38809
+1998,"Contra Costa County, California",25801,320009,38199
+1998,"Marin County, California",11626,106639,37703
+1998,"Napa County, California",4438,55907,28606
+1998,"San Francisco County, California",41211,575340,47641
+1998,"San Mateo County, California",23976,345983,45413
+1998,"Santa Clara County, California",50291,961613,51548
+1998,"Solano County, California",8340,107646,28143
+1998,"Sonoma County, California",15962,178799,30704
+1999,"Alameda County, California",44947,672416,41098
+1999,"Contra Costa County, California",26196,329072,40954
+1999,"Marin County, California",11897,110557,39257
+1999,"Napa County, California",4580,58881,30616
+1999,"San Francisco County, California",42465,591192,51580
+1999,"San Mateo County, California",24406,358442,51585
+1999,"Santa Clara County, California",51547,974007,61136
+1999,"Solano County, California",8423,112234,29243
+1999,"Sonoma County, California",16303,184595,32144
+2000,"Alameda County, California",43448,697215,45155
+2000,"Contra Costa County, California",25324,337924,42914
+2000,"Marin County, California",11155,112454,42867
+2000,"Napa County, California",4349,60552,33104
+2000,"San Francisco County, California",41002,611676,57723
+2000,"San Mateo County, California",23023,380137,67084
+2000,"Santa Clara County, California",48740,1036582,76354
+2000,"Solano County, California",8024,117281,31587
+2000,"Sonoma County, California",15404,191453,35803
+2001,"Alameda County, California",44645,697181,46489
+2001,"Contra Costa County, California",25919,337444,44744
+2001,"Marin County, California",11185,111939,43547
+2001,"Napa County, California",4474,63332,34684
+2001,"San Francisco County, California",42032,586085,61068
+2001,"San Mateo County, California",22892,369868,62288
+2001,"Santa Clara County, California",48894,1002637,65931
+2001,"Solano County, California",8205,121402,33496
+2001,"Sonoma County, California",15721,194922,36145
+2002,"Alameda County, California",46319,681988,47307
+2002,"Contra Costa County, California",26968,340197,46015
+2002,"Marin County, California",11710,111854,45269
+2002,"Napa County, California",4597,64099,35579
+2002,"San Francisco County, California",42685,547304,58510
+2002,"San Mateo County, California",23003,345137,57250
+2002,"Santa Clara County, California",49615,905489,63056
+2002,"Solano County, California",8544,123484,34005
+2002,"Sonoma County, California",16451,192994,36494
+2003,"Alameda County, California",47393,677990,48822
+2003,"Contra Costa County, California",27324,335201,46660
+2003,"Marin County, California",11698,109696,48051
+2003,"Napa County, California",4712,64205,36915
+2003,"San Francisco County, California",43162,532908,58836
+2003,"San Mateo County, California",22721,327080,59615
+2003,"Santa Clara County, California",50748,852513,65791
+2003,"Solano County, California",9109,126133,35168
+2003,"Sonoma County, California",16806,187399,37218
+2004,"Alameda County, California",47498,672203,51402
+2004,"Contra Costa County, California",27373,338349,49643
+2004,"Marin County, California",11699,109601,50539
+2004,"Napa County, California",4738,64357,39026
+2004,"San Francisco County, California",42914,520434,62370
+2004,"San Mateo County, California",22669,327152,62472
+2004,"Santa Clara County, California",51782,845040,70334
+2004,"Solano County, California",9412,126294,37118
+2004,"Sonoma County, California",17067,188506,38512
+2005,"Alameda County, California",47138,675480,53152
+2005,"Contra Costa County, California",26956,339738,51515
+2005,"Marin County, California",11432,108903,52678
+2005,"Napa County, California",4766,65201,40180
+2005,"San Francisco County, California",42560,524940,66590
+2005,"San Mateo County, California",22217,326536,66573
+2005,"Santa Clara County, California",52209,854927,72693
+2005,"Solano County, California",9461,129185,38431
+2005,"Sonoma County, California",17028,189073,40017
+2006,"Alameda County, California",49065,683616,55920
+2006,"Contra Costa County, California",28002,345649,53149
+2006,"Marin County, California",11673,108984,54697
+2006,"Napa County, California",4939,66029,41788
+2006,"San Francisco County, California",44133,536304,70729
+2006,"San Mateo County, California",23045,334910,67999
+2006,"Santa Clara County, California",55343,877710,77374
+2006,"Solano County, California",9870,130804,40225
+2006,"Sonoma County, California",17692,191555,41533
+2007,"Alameda County, California",49291,686655,58189
+2007,"Contra Costa County, California",27933,344954,55336
+2007,"Marin County, California",11429,108655,55725
+2007,"Napa County, California",4950,67961,44171
+2007,"San Francisco County, California",44369,556401,75125
+2007,"San Mateo County, California",22849,340640,72300
+2007,"Santa Clara County, California",56305,896685,82901
+2007,"Solano County, California",9726,128081,42932
+2007,"Sonoma County, California",17766,193598,42824
+2008,"Alameda County, California",52783,683099,58666
+2008,"Contra Costa County, California",29450,339547,56306
+2008,"Marin County, California",11843,109340,56106
+2008,"Napa County, California",5115,68850,45061
+2008,"San Francisco County, California",50270,573011,75513
+2008,"San Mateo County, California",23815,342361,72106
+2008,"Santa Clara County, California",59587,906502,80802
+2008,"Solano County, California",9979,126324,45264
+2008,"Sonoma County, California",18547,190574,43757
+2009,"Alameda County, California",53000,640949,58863
+2009,"Contra Costa County, California",29430,320798,56199
+2009,"Marin County, California",11593,102632,55492
+2009,"Napa County, California",5139,65012,45174
+2009,"San Francisco County, California",51517,549716,73599
+2009,"San Mateo County, California",23623,323195,76502
+2009,"Santa Clara County, California",60035,848938,80326
+2009,"Solano County, California",9935,121581,47287
+2009,"Sonoma County, California",18460,176992,43274
+2010,"Alameda County, California",54132,630343,61175
+2010,"Contra Costa County, California",29151,313615,57552
+2010,"Marin County, California",11576,102062,56134
+2010,"Napa County, California",5136,64073,45250
+2010,"San Francisco County, California",52846,545721,76361
+2010,"San Mateo County, California",23586,317576,74254
+2010,"Santa Clara County, California",60389,842581,89401
+2010,"Solano County, California",9920,122105,46273
+2010,"Sonoma County, California",18424,175508,44192
+2011,"Alameda County, California",55990,634983,62269
+2011,"Contra Costa County, California",29871,315064,59146
+2011,"Marin County, California",11680,102656,57948
+2011,"Napa County, California",5241,65086,45926
+2011,"San Francisco County, California",55143,558990,80675
+2011,"San Mateo County, California",24240,326055,76248
+2011,"Santa Clara County, California",62561,866541,94825
+2011,"Solano County, California",10066,119442,47657
+2011,"Sonoma County, California",18886,177157,45233
+2012,"Alameda County, California",54225,658708,63658
+2012,"Contra Costa County, California",28785,323484,60142
+2012,"Marin County, California",11523,106021,58943
+2012,"Napa County, California",5218,67461,46575
+2012,"San Francisco County, California",54099,586538,83452
+2012,"San Mateo County, California",24242,340075,103243
+2012,"Santa Clara County, California",61953,903053,95921
+2012,"Solano County, California",9617,121461,49237
+2012,"Sonoma County, California",18206,177222,45086
+2013,"Alameda County, California",54891,677978,63533
+2013,"Contra Costa County, California",28785,332623,60855
+2013,"Marin County, California",11601,108850,59427
+2013,"Napa County, California",5311,70178,47089
+2013,"San Francisco County, California",55042,611717,85788
+2013,"San Mateo County, California",24601,356563,103431
+2013,"Santa Clara County, California",62755,938114,98576
+2013,"Solano County, California",9779,124953,50453
+2013,"Sonoma County, California",18319,184245,45416
+2014,"Alameda County, California",56780,698536,65733
+2014,"Contra Costa County, California",29524,339281,61920
+2014,"Marin County, California",11903,110424,61953
+2014,"Napa County, California",5465,72568,48189
+2014,"San Francisco County, California",57020,640378,91877
+2014,"San Mateo County, California",25670,372192,101480
+2014,"Santa Clara County, California",65277,973668,105382
+2014,"Solano County, California",10191,127175,51795
+2014,"Sonoma County, California",18796,191686,46428
+2015,"Alameda County, California",58771,728995,68791
+2015,"Contra Costa County, California",30419,346862,63792
+2015,"Marin County, California",12105,112056,64906
+2015,"Napa County, California",5618,75037,50650
+2015,"San Francisco County, California",58423,674646,97067
+2015,"San Mateo County, California",26654,383668,102776
+2015,"Santa Clara County, California",67491,1017071,113390
+2015,"Solano County, California",10466,130980,53453
+2015,"Sonoma County, California",19060,197218,49398
+2016,"Alameda County, California",60608,751599,70563
+2016,"Contra Costa County, California",31198,359242,65187
+2016,"Marin County, California",12286,114063,67211
+2016,"Napa County, California",5719,75503,52173
+2016,"San Francisco County, California",59263,703188,101656
+2016,"San Mateo County, California",27224,391640,107469
+2016,"Santa Clara County, California",69708,1046049,118048
+2016,"Solano County, California",10868,135792,54695
+2016,"Sonoma County, California",19449,201875,50297
+2017,"Alameda County, California",62580,772071,73895
+2017,"Contra Costa County, California",31919,366799,67207
+2017,"Marin County, California",12368,115421,68210
+2017,"Napa County, California",5810,76765,53918
+2017,"San Francisco County, California",59993,716999,109066
+2017,"San Mateo County, California",27889,400560,116190
+2017,"Santa Clara County, California",71761,1071733,126775
+2017,"Solano County, California",11291,138088,56587
+2017,"Sonoma County, California",19840,205487,52176
