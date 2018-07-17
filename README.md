@@ -36,10 +36,14 @@ Possible Visulaizations:
 (Median Home Price or Housing Affordability Index(HAI)) vs. No. of Housing Units
 
 Tools used:
-Data clean up and parsing with Jupyter Notebook using Pandas, numpy & OS library.
-Flask App
-Tableau or Plotly for Visualization
-HTML, CSS, Javascript to built the webpage for the app.
+
+    Data clean up and parsing with Jupyter Notebook using Pandas, numpy & OS library.
+
+    Flask App
+
+    Tableau or Plotly for Visualization
+
+    HTML, CSS, Javascript to built the webpage for the app.
 
     
 
