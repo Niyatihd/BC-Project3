@@ -1,0 +1,127 @@
+Residence_Geo,Year,Median_HH_Inc_PlaceOfResidence_IA,Median_HH_Inc_PlaceOfResidence_IA_PerChg1970,Source
+Alameda County,1970,69267,0,Census 1970
+Alameda County,1980,69274,0,Census 1980
+Alameda County,1990,76802,0.11,Census 1990
+Alameda County,2000,83861,0.21,Census 2000
+Alameda County,2006,79628,0.15,ACS 1-year
+Alameda County,2007,82270,0.19,ACS 1-year
+Alameda County,2008,81709,0.18,ACS 1-year
+Alameda County,2009,78824,0.14,ACS 1-year
+Alameda County,2010,76353,0.1,ACS 1-year
+Alameda County,2011,74847,0.08,ACS 1-year
+Alameda County,2012,76066,0.1,ACS 1-year
+Alameda County,2013,76402,0.1,ACS 1-year
+Alameda County,2014,79232,0.14,ACS 1-year
+Alameda County,2015,81717,0.18,ACS 1-year
+Contra Costa County,1970,90550,0,Census 1970
+Contra Costa County,1980,84721,-0.06,Census 1980
+Contra Costa County,1990,92233,0.02,Census 1990
+Contra Costa County,2000,95447,0.05,Census 2000
+Contra Costa County,2006,91762,0.01,ACS 1-year
+Contra Costa County,2007,91481,0.01,ACS 1-year
+Contra Costa County,2008,91254,0.01,ACS 1-year
+Contra Costa County,2009,86583,-0.04,ACS 1-year
+Contra Costa County,2010,83801,-0.07,ACS 1-year
+Contra Costa County,2011,82375,-0.09,ACS 1-year
+Contra Costa County,2012,80034,-0.12,ACS 1-year
+Contra Costa County,2013,83474,-0.08,ACS 1-year
+Contra Costa County,2014,82462,-0.09,ACS 1-year
+Contra Costa County,2015,83104,-0.08,ACS 1-year
+Marin County,1970,95317,0,Census 1970
+Marin County,1980,90960,-0.05,Census 1980
+Marin County,1990,99305,0.04,Census 1990
+Marin County,2000,106885,0.12,Census 2000
+Marin County,2006,101057,0.06,ACS 1-year
+Marin County,2007,100378,0.05,ACS 1-year
+Marin County,2008,106766,0.12,ACS 1-year
+Marin County,2009,102577,0.08,ACS 1-year
+Marin County,2010,95335,0,ACS 1-year
+Marin County,2011,85494,-0.1,ACS 1-year
+Marin County,2012,97683,0.02,ACS 1-year
+Marin County,2013,101921,0.07,ACS 1-year
+Marin County,2014,98252,0.03,ACS 1-year
+Marin County,2015,100662,0.06,ACS 1-year
+Napa County,1970,68983,0,Census 1970
+Napa County,1980,69966,0.01,Census 1980
+Napa County,1990,75225,0.09,Census 1990
+Napa County,2000,77554,0.12,Census 2000
+Napa County,2006,82373,0.19,ACS 1-year
+Napa County,2007,74300,0.08,ACS 1-year
+Napa County,2008,75631,0.1,ACS 1-year
+Napa County,2009,78980,0.14,ACS 1-year
+Napa County,2010,73207,0.06,ACS 1-year
+Napa County,2011,68091,-0.01,ACS 1-year
+Napa County,2012,73966,0.07,ACS 1-year
+Napa County,2013,74835,0.08,ACS 1-year
+Napa County,2014,76061,0.1,ACS 1-year
+Napa County,2015,75513,0.09,ACS 1-year
+San Francisco County,1970,61157,0,Census 1970
+San Francisco County,1980,58775,-0.04,Census 1980
+San Francisco County,1990,68354,0.12,Census 1990
+San Francisco County,2000,82775,0.35,Census 2000
+San Francisco County,2006,80955,0.32,ACS 1-year
+San Francisco County,2007,81412,0.33,ACS 1-year
+San Francisco County,2008,85659,0.4,ACS 1-year
+San Francisco County,2009,81549,0.33,ACS 1-year
+San Francisco County,2010,81555,0.33,ACS 1-year
+San Francisco County,2011,77435,0.27,ACS 1-year
+San Francisco County,2012,78777,0.29,ACS 1-year
+San Francisco County,2013,81770,0.34,ACS 1-year
+San Francisco County,2014,87294,0.43,ACS 1-year
+San Francisco County,2015,92094,0.51,ACS 1-year
+San Mateo County,1970,92776,0,Census 1970
+San Mateo County,1980,85840,-0.07,Census 1980
+San Mateo County,1990,94995,0.02,Census 1990
+San Mateo County,2000,106155,0.14,Census 2000
+San Mateo County,2006,96302,0.04,ACS 1-year
+San Mateo County,2007,99467,0.07,ACS 1-year
+San Mateo County,2008,98840,0.07,ACS 1-year
+San Mateo County,2009,98192,0.06,ACS 1-year
+San Mateo County,2010,94063,0.01,ACS 1-year
+San Mateo County,2011,90468,-0.02,ACS 1-year
+San Mateo County,2012,88053,-0.05,ACS 1-year
+San Mateo County,2013,96372,0.04,ACS 1-year
+San Mateo County,2014,103693,0.12,ACS 1-year
+San Mateo County,2015,101272,0.09,ACS 1-year
+Santa Clara County,1970,89377,0,Census 1970
+Santa Clara County,1980,86570,-0.03,Census 1980
+Santa Clara County,1990,98427,0.1,Census 1990
+Santa Clara County,2000,111426,0.25,Census 2000
+Santa Clara County,2006,99916,0.12,ACS 1-year
+Santa Clara County,2007,100964,0.13,ACS 1-year
+Santa Clara County,2008,103126,0.15,ACS 1-year
+Santa Clara County,2009,98194,0.1,ACS 1-year
+Santa Clara County,2010,96625,0.08,ACS 1-year
+Santa Clara County,2011,94055,0.05,ACS 1-year
+Santa Clara County,2012,98644,0.1,ACS 1-year
+Santa Clara County,2013,97102,0.09,ACS 1-year
+Santa Clara County,2014,100082,0.12,ACS 1-year
+Santa Clara County,2015,102340,0.14,ACS 1-year
+Solano County,1970,67353,0,Census 1970
+Solano County,1980,71363,0.06,Census 1980
+Solano County,1990,80012,0.19,Census 1990
+Solano County,2000,81093,0.2,Census 2000
+Solano County,2006,76055,0.13,ACS 1-year
+Solano County,2007,80044,0.19,ACS 1-year
+Solano County,2008,81988,0.22,ACS 1-year
+Solano County,2009,75802,0.13,ACS 1-year
+Solano County,2010,72051,0.07,ACS 1-year
+Solano County,2011,70678,0.05,ACS 1-year
+Solano County,2012,66967,-0.01,ACS 1-year
+Solano County,2013,67032,0,ACS 1-year
+Solano County,2014,69777,0.04,ACS 1-year
+Solano County,2015,67443,0,ACS 1-year
+Sonoma County,1970,63523,0,Census 1970
+Sonoma County,1980,65688,0.03,Census 1980
+Sonoma County,1990,74256,0.17,Census 1990
+Sonoma County,2000,79559,0.25,Census 2000
+Sonoma County,2006,75175,0.18,ACS 1-year
+Sonoma County,2007,74681,0.18,ACS 1-year
+Sonoma County,2008,72241,0.14,ACS 1-year
+Sonoma County,2009,71867,0.13,ACS 1-year
+Sonoma County,2010,67130,0.06,ACS 1-year
+Sonoma County,2011,67604,0.06,ACS 1-year
+Sonoma County,2012,64674,0.02,ACS 1-year
+Sonoma County,2013,64404,0.01,ACS 1-year
+Sonoma County,2014,69543,0.09,ACS 1-year
+Sonoma County,2015,66674,0.05,ACS 1-year
