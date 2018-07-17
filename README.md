@@ -10,11 +10,13 @@ Housing affordability  is function of factors like,
 
 ### Description
 Data
-    Source: California Association of Realtors[CAR] - Median Home Prices & Housing Affordibilty Index                                                            (1990-2018), 
+    Source: California Association of Realtors[CAR] - Median Home Prices & Housing                                                        Affordibilty Index(1990-2018),          
             Zillow - Housing Estimates,
             USA Census Data - 
+            http://www.vitalsigns.mtc.ca.gov/housing-growth
     
     Format: CSV
     Location: resources/data/..
+
     
 
