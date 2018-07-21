@@ -1,0 +1,46 @@
+County,Year,AvgAnnualPay
+Alameda,2020,77887
+Alameda,2025,86448
+Alameda,2030,95009
+Alameda,2035,103570
+Alameda,2040,112132
+Contra Costa,2020,72576
+Contra Costa,2025,80117
+Contra Costa,2030,87659
+Contra Costa,2035,95200
+Contra Costa,2040,102741
+Marin,2020,71624
+Marin,2025,77060
+Marin,2030,82496
+Marin,2035,87932
+Marin,2040,93368
+Napa,2020,57390
+Napa,2025,63531
+Napa,2030,69673
+Napa,2035,75815
+Napa,2040,81957
+San Francisco,2020,113663
+San Francisco,2025,126975
+San Francisco,2030,140288
+San Francisco,2035,153600
+San Francisco,2040,166913
+San Mateo,2020,125414
+San Mateo,2025,140787
+San Mateo,2030,156160
+San Mateo,2035,171533
+San Mateo,2040,186905
+Santa Clara,2020,135872
+Santa Clara,2025,151986
+Santa Clara,2030,168099
+Santa Clara,2035,184212
+Santa Clara,2040,200326
+Solano,2020,60414
+Solano,2025,66892
+Solano,2030,73370
+Solano,2035,79848
+Solano,2040,86326
+Sonoma,2020,55316
+Sonoma,2025,60813
+Sonoma,2030,66309
+Sonoma,2035,71806
+Sonoma,2040,77302
