@@ -6,14 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Project3 - Bayarea Housing Price Prediction</title>
+ 
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
   <link rel="stylesheet" type="text/css" href="../static/styles/style.css">
-  
+
 </head>
 
 <body>
-    <div id="test">
+    <!-- <div id="test">
         <h1>Bayarea Housing Price</h1>
+    </div> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" id="blank"></div>
+        </div>
     </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="jumbotron text-center">
+                <img src="../images/titleimage.jpeg" class="img-rounded" width="500" height="200">
+                <p>Use the interactive chart below to explore the Dataset</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <iframe src="../images/Dashboard1.png" width="1000" height="500"></iframe>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <select>
+                    <option value="Select Area">Select Area</option>
+                    <option value="Bayarea">Bayarea</option>
+                    <option value="Alameda">Alameda</option>
+                    <option value="Contra Costa">Contra Costa</option>
+                    <option value="Marin">Marin</option>
+                    <option value="Napa">Napa</option>
+                    <option value="San Francisco">San Francisco</option>
+                    <option value="San Mateo">San Mateo</option>
+                    <option value="Solano">Solano</option>
+                    <option value="Sonoma">Sonoma</option>
+                </select>
+                <select>
+                    <option value="Select Year">Select Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2025">2025</option>
+                    <option value="2030">2030</option>
+                    <option value="2035">2035</option>
+                    <option value="2040">2040</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <button type="button">Get Prediction</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8" id="historicalplot"></div>
+        </div>
+    </div>
+
 
 
 <script type="text/javascript" src="../static/js/app.js"></script> 

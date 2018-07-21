@@ -2,3 +2,22 @@
 #test {
     color: blueviolet;
 }
+
+/****** Webpage ******/
+#heading {
+    background-color: black;
+    color: white;
+}
+
+.jumbotron {
+    /* background-image: url("../../images/titleimage3.jpg"); */
+    background-color:whitesmoke;
+    background-size: cover;
+    height: 300px;
+}
+
+#blank {
+    background-color: black;
+    height: 25px;
+}
+    
