@@ -1,40 +1,15 @@
-#################################################
-# Import Dependencies
-#################################################
 
 import pandas as pd
 import numpy as np
 
-import numpy as np
-import json
-from flask import Flask, render_template, jsonify, request
+import csv
+import os
 
-#################################################
-# Flask Setup
-#################################################
-app = Flask(__name__)
 
-#################################################
-# Flask Routes
-#################################################
-@app.route("/")
-def index():
-    return render_template('index.html')
 
-@app.route("/PerdictFuture/<UserInput>")
 # the data source  will change based on the area selection
-# If the user does not select an area, 
 
-pastTrendFile = "BayAreaSummary.csv"
-#else:
-#pastTrendFile = "CountyLevelSummary.csv"
-# Area = "UserArea"
-#Year = "UserYear"
-
-
-
-   
-df =pd.read_csv(os.path.join("resources","HistoricalData",pastTrendFile))
+df =pd.read_csv(os.path.join("resources","HistoricalData","BayAreaSummary.csv"))
 df.reset_index(inplace=True, drop=True)
 df = df.drop(["Unnamed: 0", "Year"], axis=1)
 df_new = df[["Avg.Median Home price","TotalPop","HouseholdPop","EstHouseholds" ,"Net_Migration","Immigration","Interest_Rate"]]
@@ -67,17 +42,10 @@ testing_score = model.score(X_test, y_test)
 #print(f"Testing Score: {testing_score}")
 
 Employees_wt= model.coef_[0][0]
-Household_wt = model.coef_[0][1]
+Hosuhold_wt = model.coef_[0][1]
 Wage_wt = model.coef_[0][2]
-
-# if the user doesnot select a county, then
-#Forecastfile = "BayArea_HH_Jobs_Wage_Forecast"
-#Forecastfile = "County_HH_Jobs_Wage_Forecast"    
-
-#ForecastDf = pd.read_csv(os.path.join("resources","BayAreaForecast",ForecastFile))
-
-# Get the x variables from the forecast Year
+Slope = model.intercept_[0]
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
+
