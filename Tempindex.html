@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project3 - Bayarea Housing Price Prediction</title>
+ 
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+  <link rel="stylesheet" type="text/css" href="../static/styles/style.css">
+
+</head>
+
+<body>
+    <!-- <div id="test">
+        <h1>Bayarea Housing Price</h1>
+    </div> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" id="blank"></div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="jumbotron text-center">
+                <img src="../images/titleimage.jpeg" class="img-rounded" width="500" height="200">
+                <p>Use the interactive chart below to explore the Dataset</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class='tableauPlaceholder' id='viz1532285820075' style='position: relative'>
+                    <noscript><a href='#'><img alt='NYC Citi Bike Share  ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;XP&#47;XPN4HKC96&#47;1_rss.png' style='border: none' /></a></noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='path' value='shared&#47;XPN4HKC96' /> 
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;XP&#47;XPN4HKC96&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                    </object></div>   
+                                 <script type='text/javascript'>        
+                                             var divElement = document.getElementById('viz1532285820075');  
+                                             
+                                              var vizElement = divElement.getElementsByTagName('object')[0];                   
+                                              vizElement.style.width='1016px';vizElement.style.height='991px';                   
+                                               var scriptElement = document.createElement('script');                    
+                                               scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                  
+                                                 vizElement.parentNode.insertBefore(scriptElement, vizElement); 
+                               </script>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <select>
+                    <option value="Select Area">Select Area</option>
+                    <option value="Bayarea">Bayarea</option>
+                    <option value="Alameda">Alameda</option>
+                    <option value="Contra Costa">Contra Costa</option>
+                    <option value="Marin">Marin</option>
+                    <option value="Napa">Napa</option>
+                    <option value="San Francisco">San Francisco</option>
+                    <option value="San Mateo">San Mateo</option>
+                    <option value="Solano">Solano</option>
+                    <option value="Sonoma">Sonoma</option>
+                </select>
+                <select>
+                    <option value="Select Year">Select Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2025">2025</option>
+                    <option value="2030">2030</option>
+                    <option value="2035">2035</option>
+                    <option value="2040">2040</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <button type="button">Get Prediction</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8" id="historicalplot"></div>
+        </div>
+    </div>
+
+
+
+<script type="text/javascript" src="../static/js/app.js"></script> 
+</body>
+
+</html>
+
