@@ -76,4 +76,4 @@ var images = [
         if (i == images.length) {
             i =  0;
         }
-  }, 6000);
+  }, 5000);
