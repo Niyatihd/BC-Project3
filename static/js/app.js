@@ -56,3 +56,24 @@ function updatePlot(ddl1) {
     });
 });
 }
+
+var images = [
+    "../static/images/titleimage.jpeg",
+    "../static/images/titleimage1.jpg",
+    "../static/images/titleimage2.jpg",
+    "../static/images/titleimage3.jpg",
+    "../static/images/titleimage4.jpg",
+  ]
+  
+  var imageHead = document.getElementById("image-head");
+  imageHead.style.backgroundImage = "../static/images/titleimage4.jpg";
+
+  var i = 0;
+  
+  setInterval(function() {
+        imageHead.style.backgroundImage = "url(" + images[i] + ")";
+        i = i + 1;
+        if (i == images.length) {
+            i =  0;
+        }
+  }, 6000);
