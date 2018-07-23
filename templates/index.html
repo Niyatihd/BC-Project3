@@ -7,10 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Project3 - Bayarea Housing Price Prediction</title>
  
- 
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="../static/styles/style.css">
 
@@ -93,6 +96,7 @@
                     <option value="Solano">Solano</option>
                     <option value="Sonoma">Sonoma</option>
                 </select>
+                <div id="plotlyPlot"></div>
             </div>
             <div class="col-md-4">
                 <h2> Prediction</h2>
@@ -122,6 +126,8 @@
 
 
 <script type="text/javascript" src="../static/js/app.js"></script> 
+<script type="text/javascript" src="../static/js/plotlyplot.js"></script> 
+
 </body>
 
 </html>

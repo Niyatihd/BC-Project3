@@ -25,24 +25,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-#@app.route("/predictFuture", methods=['GET','POST'])
-## the data source  will change based on the area selection
-#
-#def predictprice():
-#    if request.json: ### == 'POST':
-#        print("POSTED")
-#        #selection = request.json
-#        area_selected_json = request.json
-#        area_selected = area_selected_json['areaselected']
-#        print(area_selected)
-#        
-#    else:
-#        area_selected = ""
-#        
-#    returnval = {"name":area_selected}
-#    
-#    return jsonify(returnval)
-
 
 @app.route("/predictFuture", methods=['GET','POST'])
 # the data source  will change based on the area selection
@@ -119,6 +101,45 @@ def predictprice():
 
             
     return jsonify(result)
+
+@app.route("/plotlyData")
+# the data source  will change based on the area selection
+def getYearlyData():
+    data_df = pd.read_json("static/resources/County_HH_Jobs_Income_MedHHPrice_PctChange_91_16.json")
+    data_df.Year = data_df.Year.astype(float)
+    count = 0
+    child_dict = {}
+    parent_dict = {}
+#    final_plotly_list = []
+    
+    current_county = data_df.County[count]
+    child_dict["year"] = [data_df.Year[count]]
+    child_dict["Households"] = [round(data_df.Households[count],2)]
+    child_dict["Income"] = [round(data_df.Income[count],2)]
+    child_dict["Jobs"] = [round(data_df.Jobs[count],2)]
+    child_dict["Median Home Price"] = [round(data_df["Median Home Price"][count],2)]
+    
+    for x in range(len(data_df.County)):
+        
+    
+    #     print(data.County[x])
+        if data_df.County[x] == current_county:
+    #         county_list.append(data.County[x])
+            child_dict["year"].append(data_df.Year[x])
+            child_dict["Households"].append(round(data_df.Households[x],2))
+            child_dict["Income"].append(round(data_df.Income[x],2))
+            child_dict["Jobs"].append(round(data_df.Jobs[x],2))
+            child_dict["Median Home Price"].append(round(data_df["Median Home Price"][x],2))
+            
+        else:
+            parent_dict[data_df.County[x]] = child_dict
+            count += 1    
+            
+    print(parent_dict)
+            
+#    final_plotly_list.append(parent_dict)
+#    print(final_plotly_list)
+    return jsonify(parent_dict)
         
 
 if __name__ == "__main__":
