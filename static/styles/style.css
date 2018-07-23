@@ -10,10 +10,12 @@
 }
 
 .jumbotron {
-    /* background-image: url("../../images/titleimage3.jpg"); */
+    background-image: url("../images/titleimage6.jpeg");
+    background-size: 850px 300px;
     background-color:whitesmoke;
-    background-size: cover;
-    height: 300px;
+    /* background-size: cover; */
+    height: 500px;
+    opacity: 0.5;
 }
 
 #blank {
@@ -25,3 +27,20 @@
     float: right;
 }
     
+.image-head {
+    background-image:url(http://placehold.it/1920x1080);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+  }
+
+  #maintitle {
+      color: white;
+      background-color: black;
+  }
