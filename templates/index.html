@@ -20,11 +20,24 @@
     <!-- <div id="test">
         <h1>Bayarea Housing Price</h1>
     </div> -->
-    <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Bayarea Housing Price Prediction</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+              </ul>
+            </div>
+          </nav>
+    <!-- <div class="container-fluid">
         <div class="row">
             <div class="col-md-12" id="blank"></div>
         </div>
-    </div>
+    </div> -->
     <br>
     <div class="container-fluid">
         <div class="row">
@@ -62,6 +75,8 @@
                 </select>
             </div>
             <div class="col-md-4">
+                <h2> Prediction</h2>
+                <hr>
                 <select>
                     <option value="Select Year">Select Year</option>
                     <option value="2020">2020</option>
@@ -70,7 +85,10 @@
                     <option value="2035">2035</option>
                     <option value="2040">2040</option>
                 </select>
-                <button type="button">Get Prediction</button>
+                <button id="predictionButton" type="submit reset">Get Prediction</button>
+                <div id="employeecoeff"></div>
+                <div id="householdcoeff"></div>
+                <div id="wageemployeecoeff"></div>
             </div>
         </div>
     </div>

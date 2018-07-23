@@ -28,7 +28,31 @@ function updatePlot(ddl1) {
     .then((data) => {
         console.log(data);
         return data;
+    })
+    .then((data) => {
+
+    var empCoeff = data.employees_wt;
+    console.log("empCoeff is: " + empCoeff);
+    var householdCoeff = data.household_wt;
+    var wageCoeff = data.wage_wt;
+
+    // Set variable for the button
+    var buttonClick = document.querySelector("#predictionButton");
+
+    // Add click even listener to the button
+    buttonClick.addEventListener("click", function() {
+
+        var empCoeffid = document.querySelector('#employeecoeff');
+        var todoListItem1= document.createElement("p1");
+        todoListItem1.innerHTML = "Jobs: " + (empCoeff*100).toFixed(0) + "%";
+        var todoListItem2= document.createElement("p1");
+        todoListItem2.innerHTML = "Household: " + (householdCoeff*100).toFixed(0) + "%";
+        var todoListItem3= document.createElement("p1");
+        todoListItem3.innerHTML = "Wages: " + (wageCoeff*100).toFixed(0) + "%";
+        empCoeffid.appendChild(todoListItem1);
+        empCoeffid.appendChild(todoListItem2);
+        empCoeffid.appendChild(todoListItem3);
+
     });
-
+});
 }
-
