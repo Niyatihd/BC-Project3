@@ -74,53 +74,85 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8">
-                <h3>Bayarea Housing Price Time-Line</h3>
-                <iframe src="../static/images/Dashboard1.png" width="900" height="500"></iframe>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <select onchange="updatePlot(this.value)">
-                    <option value="Select Area">Select Area</option>
-                    <option value="Bay Area">Bay Area</option>
-                    <option value="Alameda">Alameda</option>
-                    <option value="Contra Costa">Contra Costa</option>
-                    <option value="Marin">Marin</option>
-                    <option value="Napa">Napa</option>
-                    <option value="San Francisco">San Francisco</option>
-                    <option value="San Mateo">San Mateo</option>
-                    <option value="Solano">Solano</option>
-                    <option value="Sonoma">Sonoma</option>
-                </select>
-                <div id="plotlyPlot"></div>
+
+                    
+                
+                <div class='tableauPlaceholder' id='viz1532399192248' style='position: relative'>
+                    <noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BayAreaHousingHistoricalData&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='BayAreaHousingHistoricalData&#47;Dashboard2' />
+                        <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ba&#47;BayAreaHousingHistoricalData&#47;Dashboard2&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+                    </object></div>            
+                        <script type='text/javascript'>   
+                                         var divElement = document.getElementById('viz1532399192248');  
+                                          var vizElement = divElement.getElementsByTagName('object')[0];   
+                                          
+                                        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';          
+                                        var scriptElement = document.createElement('script');                
+                                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';  
+                                        vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                         </script>
+                
             </div>
             <div class="col-md-4">
-                <h2> Prediction</h2>
-                <hr>
-                <select>
-                    <option value="Select Year">Select Year</option>
-                    <option value="2020">2020</option>
-                    <option value="2025">2025</option>
-                    <option value="2030">2030</option>
-                    <option value="2035">2035</option>
-                    <option value="2040">2040</option>
-                </select>
-                <button id="predictionButton" type="submit reset">Get Prediction</button>
-                <div id="employeecoeff"></div>
-                <div id="householdcoeff"></div>
-                <div id="wageemployeecoeff"></div>
-            </div>
-        </div>
-    </div>
+                       
+                                             <div class="panel panel-default">
+                                                  <div class="panel-heading">
+                                                      <strong><div class="panel-title">
+                                                      <h4> A peek into the Future</h4>
+                                                      
+                                                      </div></strong>
+                                                  </div>
+                                          
+                                                  <div class="panel-body">
+                                                    
+                                                    <div class="row">
+                                                            <div class="col-md-12">
+                                                                    <select onchange="updatePlot(this.value)">
+                                                                        <option value="Select Area">Select Area</option>
+                                                                        <option value="Bay Area">Bay Area</option>
+                                                                        <option value="Alameda">Alameda</option>
+                                                                        <option value="Contra Costa">Contra Costa</option>
+                                                                        <option value="Marin">Marin</option>
+                                                                        <option value="Napa">Napa</option>
+                                                                        <option value="San Francisco">San Francisco</option>
+                                                                        <option value="San Mateo">San Mateo</option>
+                                                                        <option value="Solano">Solano</option>
+                                                                        <option value="Sonoma">Sonoma</option>
+                                                                    </select>
+                                                                    <div id="plotlyPlot"></div>
+                                                            </div>
+                                                    </div>
+                                                    <div class = "row">
+                                                                    <p> What if the wages continue to rise at their current rate and the morgage rate (30 year fixed) holds steady at 4.6 % ...Can you afford to buy a median price home in the future? Find out here!</p>
+                                                    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8" id="historicalplot"></div>
-        </div>
+
+                                                    <div class = "row">
+                                                                <button id="predictionButton" type="submit reset">Get Prediction</button>
+                                                                <div id="employeecoeff"></div>
+                                                                <div id="householdcoeff"></div>
+                                                                <div id="wageemployeecoeff"></div>
+                                                    </div>
+                                                </div>
+
+             </div>
+                                              
+             </div>  
+              
+             </div>
+                                      
+        
     </div>
+    </div>
+    <br>
+
 
 
 
