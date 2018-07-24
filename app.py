@@ -36,10 +36,10 @@ def predictprice():
         area_selected = area_selected_json['areaselected']
         print(area_selected)
         
-        if area_selected == "" or area_selected == "Bayarea":
+        if area_selected == "Bay Area" or area_selected == "":
             pastTrendFile = "BayAreaSummary.csv"
 
-            df =pd.read_csv(os.path.join("static","resources",pastTrendFile))
+            df =pd.read_csv(os.path.join("resources","HistoricalData",pastTrendFile))
             #            df =pd.read_csv(os.path.join("resources","HistoricalData",pastTrendFile))
 
             df.reset_index(inplace=True, drop=True)

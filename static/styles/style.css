@@ -73,12 +73,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 300px;
-    width: 50%;
+    height: 250px;
+    width: 80%;
     margin: 0;
     padding: 0;
     color: black;
     text-align: center;
+    /* z-index: 1; */
   }
 
   #maintitle {
