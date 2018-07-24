@@ -1,5 +1,5 @@
 /****** TEST ******/
-console.log("app.js link Works!!!!!!!!!!!")
+console.log("app.js link Works!!!!!!!!!!!");
 
 //##########################################################
 //Post, get values to and from app.py and render sliderplot 
@@ -128,7 +128,7 @@ function updatePlot(ddl1) {
                 //   };
             
                 Plotly.newPlot("plotlyPlot", data); //layout);
-                })
+                });
         
             // function updatePlotly(newdata) {
             //     var LINE = document.getElementById("plotlyPlot");
@@ -169,7 +169,7 @@ var images = [
     "../static/images/titleimage2.jpg",
     "../static/images/titleimage3.jpg",
     "../static/images/titleimage4.jpg",
-  ]
+  ];
   
   var imageHead = document.getElementById("image-head");
   imageHead.style.backgroundImage = "../static/images/titleimage4.jpg";
