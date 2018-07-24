@@ -39,7 +39,9 @@ def predictprice():
         if area_selected == "" or area_selected == "Bayarea":
             pastTrendFile = "BayAreaSummary.csv"
 
-            df =pd.read_csv(os.path.join("resources","HistoricalData",pastTrendFile))
+            df =pd.read_csv(os.path.join("static","resources",pastTrendFile))
+            #            df =pd.read_csv(os.path.join("resources","HistoricalData",pastTrendFile))
+
             df.reset_index(inplace=True, drop=True)
             df = df.drop(["Unnamed: 0", "Year"], axis=1)
             Final_df = df[["Avg.Median Home price", "AvgAnnualPay","EstHouseholds", "Employees"]]
@@ -105,41 +107,34 @@ def predictprice():
 @app.route("/plotlyData")
 # the data source  will change based on the area selection
 def getYearlyData():
-    data_df = pd.read_json("static/resources/County_HH_Jobs_Income_MedHHPrice_PctChange_91_16.json")
+    data_df = pd.read_json("static/resources/HH_Jobs_Income_MedHHPrice_PctChange_91_16.json")
     data_df.Year = data_df.Year.astype(float)
-    count = 0
-    child_dict = {}
-    parent_dict = {}
-#    final_plotly_list = []
-    
-    current_county = data_df.County[count]
-    child_dict["year"] = [data_df.Year[count]]
-    child_dict["Households"] = [round(data_df.Households[count],2)]
-    child_dict["Income"] = [round(data_df.Income[count],2)]
-    child_dict["Jobs"] = [round(data_df.Jobs[count],2)]
-    child_dict["Median Home Price"] = [round(data_df["Median Home Price"][count],2)]
-    
-    for x in range(len(data_df.County)):
-        
-    
-    #     print(data.County[x])
-        if data_df.County[x] == current_county:
-    #         county_list.append(data.County[x])
-            child_dict["year"].append(data_df.Year[x])
-            child_dict["Households"].append(round(data_df.Households[x],2))
-            child_dict["Income"].append(round(data_df.Income[x],2))
-            child_dict["Jobs"].append(round(data_df.Jobs[x],2))
-            child_dict["Median Home Price"].append(round(data_df["Median Home Price"][x],2))
+    counties = ['Bay Area', 'Solano', 'Sonoma', 'Santa Clara', 'San Mateo',
+                'San Francisco', 'Napa', 'Marin', 'Contra Costa', 'Alameda']
+    final_dict = {}
+    for county in counties:
+        temp_dict = {}
+    #     print(county)
+        current_df = data_df.loc[data_df["County"] == county]
+        year_list = current_df['Year'].tolist()       
+        house_list = current_df['Households'].tolist() 
+        income_list = current_df['Income'].tolist() 
+        jobs_list = current_df['Jobs'].tolist()
+        homeprice_list = current_df['Median Home Price'].tolist()
+        temp_dict["year"] = year_list
+        temp_dict["household"] = house_list
+        temp_dict["income"] = income_list
+        temp_dict["jobs"] = jobs_list
+        temp_dict["medianHomePrice"] = homeprice_list
+        final_dict[county] = temp_dict
+        print(temp_dict)
+    # final_dict    
             
-        else:
-            parent_dict[data_df.County[x]] = child_dict
-            count += 1    
-            
-    print(parent_dict)
+    print(final_dict)
             
 #    final_plotly_list.append(parent_dict)
 #    print(final_plotly_list)
-    return jsonify(parent_dict)
+    return jsonify(final_dict)
         
 
 if __name__ == "__main__":
