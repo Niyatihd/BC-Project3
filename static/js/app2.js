@@ -268,16 +268,8 @@ function updatePlot(ddl1) {
     // Add click even listener to the button
     buttonClick.addEventListener("click", function() {
 
-        var empCoeffid = document.querySelector('#employeecoeff');
-        var todoListItem1= document.createElement("p1");
-        todoListItem1.innerHTML = "Jobs: " + (empCoeff*100).toFixed(0) + "%\n";
-        var todoListItem2= document.createElement("p1");
-        todoListItem2.innerHTML = "Household: " + (householdCoeff*100).toFixed(0) + "%\n";
-        var todoListItem3= document.createElement("p1");
-        todoListItem3.innerHTML = "Wages: " + (wageCoeff*100).toFixed(0) + "%\n";
-        empCoeffid.appendChild(todoListItem1);
-        empCoeffid.appendChild(todoListItem2);
-        empCoeffid.appendChild(todoListItem3);
+        var predictionString = document.querySelector('#predictionStr');
+        predictionString.innerHTML = "Wages: " + (wageCoeff*100).toFixed(0) + "%";
     });
 
     // function rePlotPlotly() {
