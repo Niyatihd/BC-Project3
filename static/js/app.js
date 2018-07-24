@@ -61,10 +61,10 @@ function updatePlot(ddl1) {
                 console.log(response);
               // Grab values from the response json object to build the plots
               var year = response[userSel].year;
-              var households = response[userSel].Households;
-              var income = response[userSel].Income;
-              var jobs = response[userSel].Jobs;
-              var medianHomePrice = response[userSel]["Median Home Price"];
+              var households = response[userSel].household;
+              var income = response[userSel].income;
+              var jobs = response[userSel].jobs;
+              var medianHomePrice = response[userSel].medianHomePrice;
               console.log(userSel, year, households, income, jobs, medianHomePrice);
               
             //   function init() {
