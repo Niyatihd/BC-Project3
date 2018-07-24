@@ -86,3 +86,21 @@
       color: white;
       background-color: black;
   }
+
+  #predictionDescription {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  #predictionButton {
+      margin-left: 25px;
+      background-color: darkcyan;
+      color: white;
+      font-size: 15px;
+      height: 30px;
+  }
+
+  #predictionStr {
+      font-size: 18px;
+      color: darkblue;
+      padding-left: 25px;
+  }
