@@ -39,18 +39,23 @@ Past observed trends in Median Home Price, Households, Jobs and Income.
 Tools used:
 
 Github 
+
 Work-flow, partner co-ordination & project compilation
 
 Jupyter notebook, spyder & vs code
+
 Data munging, initial machine learning model & coding
 
 Flask, html, css, javascript, bootstrap
+
 Build the interactive prediction App webpage
 
 Tableau
+
 Visualize past data and its trends & plot for user interaction on the webpage
 
 Plotly & D3
+
 Interactively Plot visualization for future predictions as per user selection on the webpage
  
 
