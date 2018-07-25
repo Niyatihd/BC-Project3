@@ -289,17 +289,35 @@ function updatePlot(ddl1) {
     //You are getting a table 
 
     // Set variable for the prediction button
-    var buttonClick = document.querySelector("#predictionButton");
+    var buttonClick = document.querySelector("#viewAffordability");
 
     // Add click even listener to the prediction button
     buttonClick.addEventListener("click", function() {
 
-        var predictionTable= document.querySelector('#table');
+        var predictionTable= document.querySelector('tbody');
+        predictionTable.innerHTML = "";
+        var rowheadings = ["Median Home Price","Qualifying Income", "Est. Annual Pay"]
+        var columnheadings = ["2020","2025","2030","2035","2040"]
+        //predictionTable.innerHTML = data;
+        console.log(data.length);
+        for (var i = 0; i < data.length; i++) {
+                // Insert a row into the table at position i
+            var $row = predictionTable.insertRow(i);
+            // Insert cells into the newly created row
+            console.log(data[i]);
 
-        //textclean= data.replace(/"/g,' ');
-        //textclean2 = textclean.replace(/\\n/g,'');
-        //predictionTable.innerHTML = textclean2;;
-        predictionTable.innerHTML = data;
+            $row.insertCell(0).innerText = rowheadings[i]
+            //var num = '$' + value.toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+            $row.insertCell(1).innerText = '$ ' + data[i][columnheadings[0]];
+            $row.insertCell(2).innerText = '$ ' + data[i][columnheadings[1]];
+            $row.insertCell(3).innerText = '$ ' + data[i][columnheadings[2]];
+            $row.insertCell(4).innerText = '$ ' + data[i][columnheadings[3]];
+            $row.insertCell(5).innerText = '$ ' + data[i][columnheadings[4]];
+                
+
+        }
+
+
         console.log(data)
 
         Plotly.d3.json("/plot2Data", function(error, response) {
@@ -359,7 +377,7 @@ function updatePlot(ddl1) {
                 type: "linear"
             },
             showlegend: true,
-            legend: {"orientation": "h"}
+            legend: {"orientation": "h" },
             };
         
             Plotly.newPlot("plotlyPlot", data, layout);
@@ -369,77 +387,77 @@ function updatePlot(ddl1) {
     });
 
     //-------------------------------------------------------------------------------------------
-     // Set variable for the affordability button
-     var buttonClick = document.querySelector("#viewAffordability");
+    //  // Set variable for the affordability button
+    //  var buttonClick = document.querySelector("#viewAffordability");
 
-     // Add click even listener to the affordability button
-     buttonClick.addEventListener("click", function() {
+    //  // Add click even listener to the affordability button
+    //  buttonClick.addEventListener("click", function() {
  
-         Plotly.d3.json("/plot2Data", function(error, response) {
-             if (error) return console.warn(error);
-             console.log("for plot2 = " + response[userSel].avgAnnualIncome);
-           // Grab values from the response json object to build the plots
-           var year = response[userSel].year;
-           var qualifyingIncome = response[userSel].qualifyingIncome;
-           var avgAnnualIncome = response[userSel].avgAnnualIncome;
-           var medianHomePrice = response[userSel].medianHomePrice;
-         //   console.log(userSel, year, qualifyingIncome, avgAnnualIncome, medianHomePrice);
-             console.log("Values for plot2 check!");
-             var trace1 = {
-                 type: "scatter",
-                 mode: "lines",
-                 name: "Qualifying Income",
-                 x: year,
-                 y: qualifyingIncome,
-                 line: {
-                 color: "#17BECF"
-                 }
-             };
+    //      Plotly.d3.json("/plot2Data", function(error, response) {
+    //          if (error) return console.warn(error);
+    //          console.log("for plot2 = " + response[userSel].avgAnnualIncome);
+    //        // Grab values from the response json object to build the plots
+    //        var year = response[userSel].year;
+    //        var qualifyingIncome = response[userSel].qualifyingIncome;
+    //        var avgAnnualIncome = response[userSel].avgAnnualIncome;
+    //        var medianHomePrice = response[userSel].medianHomePrice;
+    //      //   console.log(userSel, year, qualifyingIncome, avgAnnualIncome, medianHomePrice);
+    //          console.log("Values for plot2 check!");
+    //          var trace1 = {
+    //              type: "scatter",
+    //              mode: "lines",
+    //              name: "Qualifying Income",
+    //              x: year,
+    //              y: qualifyingIncome,
+    //              line: {
+    //              color: "#17BECF"
+    //              }
+    //          };
      
-             var trace2 = {
-                 type: "scatter",
-                 mode: "lines",
-                 name: "Avg. Annual Income",
-                 x: year,
-                 y: avgAnnualIncome,
-                 line: {
-                 color: "red"
-                 }
-             };
+    //          var trace2 = {
+    //              type: "scatter",
+    //              mode: "lines",
+    //              name: "Avg. Annual Income",
+    //              x: year,
+    //              y: avgAnnualIncome,
+    //              line: {
+    //              color: "red"
+    //              }
+    //          };
      
-             var trace3 = {
-                 type: "scatter",
-                 mode: "lines",
-                 name: "Median Home Price",
-                 x: year,
-                 y: medianHomePrice,
-                 line: {
-                 color: "blue"
-                 }
-             };
+    //          var trace3 = {
+    //              type: "scatter",
+    //              mode: "lines",
+    //              name: "Median Home Price",
+    //              x: year,
+    //              y: medianHomePrice,
+    //              line: {
+    //              color: "blue"
+    //              }
+    //          };
  
-             var data = [trace1, trace2, trace3];
+    //          var data = [trace1, trace2, trace3];
      
-             var layout = {
-             title: `Affordability Gap`,
-             xaxis: {
-                // title: "Year",
-                 type: "date"
-             },
-             yaxis: {
-                 //title: "Percentage Change(%)",
-                 autorange: true,
-                 type: "linear"
-             },
-             showlegend: true,
-             legend: {"orientation": "h"}
-             };
+    //          var layout = {
+    //          title: `Affordability Gap`,
+    //          xaxis: {
+    //             // title: "Year",
+    //              type: "date"
+    //          },
+    //          yaxis: {
+    //              //title: "Percentage Change(%)",
+    //              autorange: true,
+    //              type: "linear"
+    //          },
+    //          showlegend: true,
+    //          legend: {"orientation": "h"}
+    //          };
          
-             Plotly.newPlot("plotlyPlot", data, layout);
+    //          Plotly.newPlot("plotlyPlot", data, layout);
              
-         });
+    //      });
  
-     });
+    //  });
     //-------------------------------------------------------------------------------------------
 
 
@@ -514,11 +532,13 @@ function updatePlot(ddl1) {
 
 
 var images = [
-    "../static/images/titleimage.jpeg",
-    "../static/images/titleimage1.jpg",
-    "../static/images/titleimage2.jpg",
-    "../static/images/titleimage3.jpg",
-    "../static/images/titleimage4.jpg",
+    "../static/images/carousel/1968-2010_US-CA-SF_Median_Price.jpg",
+    "../static/images/carousel/Affordability_Bay-Area-Counties_Chart.jpg",
+    "../static/images/carousel/BayAreaReakEstateMarketCycles.jpg",
+    "../static/images/carousel/Case-Shiller_HT_1996-2011.jpg",
+    "../static/images/carousel/Case-Shiller_HT_from_1988_V2-bar-chart.jpg",
+    "../static/images/carousel/National-Housing-Affordability-Index_NAR_by-MSA.jpg",
+    "../static/images/carousel/titleimage3.jpg",
   ];
   
   var imageHead = document.getElementById("image-head");
@@ -532,4 +552,4 @@ var images = [
         if (i == images.length) {
             i =  0;
         }
-  }, 5000);
+  }, 7500);

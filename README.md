@@ -18,7 +18,7 @@ Some of the factors that influence Housing affordability and Median home prices 
 
 
 ### Dataset
-    Sources: California Association of Realtors[CAR]      
+    Sources: California Association of Realtors[CAR)     
              Zillow - Housing Estimates,
              US Census Bureau
              Bureau of Labor Statistics
