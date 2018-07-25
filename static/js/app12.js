@@ -274,6 +274,12 @@ function updatePlot(ddl1) {
 
         var predictionString = document.querySelector('#predictionStr');
         predictionString.innerHTML = "Wages: " + (wageCoeff*100).toFixed(0) + "%";
+
+        Plotly.d3.json("/plot2Data", function(error, response) {
+            if (error) return console.warn(error);
+            console.log("for plot2 = " + response);
+        });
+
     });
 
     // function rePlotPlotly() {

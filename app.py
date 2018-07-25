@@ -135,6 +135,40 @@ def getYearlyData():
 #    final_plotly_list.append(parent_dict)
 #    print(final_plotly_list)
     return jsonify(final_dict)
+
+
+@app.route("/plot2Data")
+# the data source  will change based on the area selection
+def getYearlyDataPlot2():
+    data_df1 = pd.read_csv("resources/BayAreaForecast/MinimumQualifyingIncomePastANDFuture_5YrIntervals.csv")
+    data_df1.Year = data_df1.Year.astype(float)
+    data_df1["Avg.Median Home price"] = data_df1["Avg.Median Home price"].astype(float)
+    data_df1["QualifyingIncome"] = data_df1["QualifyingIncome"].astype(float)
+    data_df1["AvgAnnualIncome"] = data_df1["AvgAnnualIncome"].astype(float)
+    counties1 = ['Bay Area', 'Solano', 'Sonoma', 'Santa Clara', 'San Mateo',
+                'San Francisco', 'Napa', 'Marin', 'Contra Costa', 'Alameda']
+    final_dict1 = {}
+    for county in counties1:
+        temp_dict1 = {}
+    #     print(county)
+        current_df1 = data_df1.loc[data_df1["County"] == county]
+        year_list1 = current_df1['Year'].tolist()       
+        avg_income_list1 = current_df1['AvgAnnualIncome'].tolist() 
+        qualifying_income_list1 = current_df1['QualifyingIncome'].tolist() 
+        homeprice_list1 = current_df1['Avg.Median Home price'].tolist()
+        temp_dict1["year"] = year_list1
+        temp_dict1["avgAnnualIncome"] = avg_income_list1
+        temp_dict1["qualifyingIncome"] = qualifying_income_list1
+        temp_dict1["medianHomePrice"] = homeprice_list1
+        final_dict1[county] = temp_dict1
+        print(temp_dict1)
+    # final_dict   
+            
+    print(final_dict1)
+            
+#    final_plotly_list.append(parent_dict)
+#    print(final_plotly_list)
+    return jsonify(final_dict1)
         
 
 if __name__ == "__main__":
