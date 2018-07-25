@@ -6,16 +6,15 @@
 
 
 ### Description
-Application for predicting median home price for the Bay Area counties using linear regression model(s) based on the past trends (since 1990).
+Application for predicting median home price for the Bay Area and Bay-area counties using linear regression model(s) based on the past trends (since 1990) and future predictions.
 
 ### Hypothesis
-Some of the factors that influence Housing affordability and Median home prices include:
+Some of the factors that influence Housing affordability and Median home prices include: 
 
-    1. Population Growth,
-    2. New Housing Constrction(permits),
-    3. Median Household income and/or the average earnings of buyers.
- 
-Hypothesis: The reason for the astronomical rise in the housing prices in the bay area in the past few years is the increasing gap between the demand (population and wage growth) and supply (new housing contruction). This widening gap will futher accelerate housing price increases in the future.
+                   1. Average annual pay, 
+                   2. No. of households 
+                   3. Jobs
+
 
 
 ### Dataset
@@ -29,25 +28,36 @@ Hypothesis: The reason for the astronomical rise in the housing prices in the ba
     Location: resources/data/..
 
 ### Project Presentation
-The interactive app will help user to predict Median Housing price at Bay Area level as well as County level for a chosen year in the future.
+The interactive app will help user to predict Median Housing price at Bay Area level as well as County level for future years
+at 5 year intervals.
 
 Possible Visulaizations:
 
-(Median Home Price or Housing Affordability Index(HAI)) vs. Population Growth
+Median Home Price vs. Average Annual Income(Estimated) vs. Qualifying Income.
+Past observed trends in Median Home Price, Households, Jobs and Income.
 
-(Median Home Price or Housing Affordability Index(HAI)) vs. No. of Housing Units
+TOOLS USED:
 
-Tools used:
+    Github 
 
-    Data clean up and parsing with Jupyter Notebook using Pandas, numpy & OS library.
+        Work-flow, partner co-ordination & project compilation
 
-    Flask App
+    Jupyter notebook, spyder & vs code
 
-    Tableau or Plotly for Visualization
+        Data munging, initial machine learning model & coding
 
-    HTML, CSS, Javascript to built the webpage for the app.
+    Flask, html, css, javascript, bootstrap
 
-    
+        Build the interactive prediction App webpage
+
+    Tableau
+
+        Visualize past data and its trends & plot for user interaction on the webpage
+
+    Plotly & D3
+
+         Interactively Plot visualization for future predictions as per user selection on the webpage
+
 
 ### Project Contributors
 
