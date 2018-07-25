@@ -295,12 +295,10 @@ function updatePlot(ddl1) {
     buttonClick.addEventListener("click", function() {
 
         var predictionTable= document.querySelector('#table');
-
-        //textclean= data.replace(/"/g,' ');
-        //textclean2 = textclean.replace(/\\n/g,'');
-        //predictionTable.innerHTML = textclean2;;
-        predictionTable.innerHTML = data;
-        console.log(data)
+        textclean= text.replace(/"/g,' ');
+        textclean2 = textclean.replace(/\\n/g,'');
+        predictionTable.innerHTML = textclean2;;
+        // console.log("check wage!!")
 
         Plotly.d3.json("/plot2Data", function(error, response) {
             if (error) return console.warn(error);

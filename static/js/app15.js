@@ -299,7 +299,7 @@ function updatePlot(ddl1) {
         //textclean= data.replace(/"/g,' ');
         //textclean2 = textclean.replace(/\\n/g,'');
         //predictionTable.innerHTML = textclean2;;
-        predictionTable.innerHTML = data;
+        predictionTable.innerHTML = data
         console.log(data)
 
         Plotly.d3.json("/plot2Data", function(error, response) {
