@@ -62,9 +62,10 @@ def predictprice():
             Household_wt = model.coef_[0][1]
             Wage_wt = model.coef_[0][2]
             y_intercept = model.intercept_[0]
+            
 
             #return result     
-            result = {"employees_wt":Employees_wt, "household_wt":Household_wt, "wage_wt":Wage_wt, "y-intercept":y_intercept}  
+            result = {"employees_wt":Employees_wt, "household_wt":Household_wt, "wage_wt":Wage_wt, "y_intercept":y_intercept}  
             print(result)
         
         # If the user does not select an area,     
@@ -98,11 +99,38 @@ def predictprice():
             Wage_wt = model.coef_[0][2]
             y_intercept = model.intercept_[0]
             
-            result = {"employees_wt":Employees_wt, "household_wt":Household_wt, "wage_wt":Wage_wt, "y-intercept":y_intercept}
-            print(result)
+        # get the jobs, HH and wages forecast for 2020, 2025, 2030, 2035 and 2040 and claulate median HH price and Qualifying income
+        ForecastDf = pd.read_csv(os.path.join("resources","BayAreaForecast","County_HH_Jobs_Wage_Forecast_Updated.csv"))
+        #Assuming the Interest rates hold steady into the future.
+        interestRate = 4.46
+                
+        ForecastDF = pd.read_csv(os.path.join("resources","BayAreaForecast","County_HH_Jobs_Wage_Forecast_Updated.csv"))
+        #ForecastDF = CountyLevelDF.drop(["Unnamed: 0"], axis=1)
+        ForecastDF = ForecastDF[["Year","County","AvgAnnualPay","Jobs","Households"]]
+        ForecastDF = ForecastDF.loc[ForecastDF["County"] == area_selected]
+        ForecastDF = ForecastDF.loc[ForecastDF["Year"] >2015]
+        ForecastDF ["Avg.Median Home price"] = y_intercept + (ForecastDF["AvgAnnualPay"]*Wage_wt) + (ForecastDF["Jobs"]*Employees_wt) +(ForecastDF["Households"]*Household_wt)
+        
+        
+        ForecastDF["MedLoanAmt"] = ForecastDF["Avg.Median Home price"] - ForecastDF["Avg.Median Home price"]*0.2
+        ForecastDF["MthlyMortPay"] =  np.round((np.pmt(interestRate/1200,360,ForecastDF["MedLoanAmt"]))*(-1))
+        ForecastDF["MthlyTax"]  =  np.round(ForecastDF["Avg.Median Home price"]*0.01)/12
+        ForecastDF["MthlyIns"]  =np.round(ForecastDF["Avg.Median Home price"] * 0.0038)/12
+        ForecastDF["MthlyHousingCost"] = ForecastDF["MthlyMortPay"] +ForecastDF["MthlyTax"] +ForecastDF["MthlyIns"] 
+        ForecastDF["MthlyMinIncome"]=  np.round(ForecastDF["MthlyHousingCost"]/0.3)
+        ForecastDF["Qualifying Income"] = ForecastDF["MthlyMinIncome"]*12
+        ForecastDF = ForecastDF[["Year","Avg.Median Home price","Qualifying Income","AvgAnnualPay"]]
+        ForecastDF
+        
+        ForecastDF.set_index('Year',inplace=True)
+        ForecastDFTransposed = ForecastDF.transpose()
+        ForecastDFTransposed = ForecastDFTransposed.round()
+        return jsonify(ForecastDFTransposed.to_html())    
+    #result = {"employees_wt":Employees_wt, "household_wt":Household_wt, "wage_wt":Wage_wt, "y_intercept":y_intercept}
+            #print(result)
 
             
-    return jsonify(result)
+   # return jsonify(result)
 
 @app.route("/plotlyData")
 # the data source  will change based on the area selection

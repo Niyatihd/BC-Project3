@@ -26,7 +26,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
               <div class="navbar-header">
-                <a class="navbar-brand" href="#" id="maintitle">Bayarea Housing Price Prediction</a>
+                <a class="navbar-brand" href="#" id="maintitle">Ninja Constulants</a>
               </div>
               <ul class="nav navbar-nav">
                 
@@ -104,16 +104,18 @@
                                              <div class="panel panel-default">
                                                   <div class="panel-heading">
                                                       <strong><div class="panel-title">
-                                                      <h4> A peek into the Future</h4>
+                                                      <h3> A peek into the Future</h3>
+
                                                       
                                                       </div></strong>
+                                                      <p style = "font-size: 18px"> What if the wages continue to rise at their current rate and the mortgage rate (30 year fixed) holds steady at 4.46 % ...Can you afford to buy a median price home in the future? Find out here!</p>
                                                   </div>
                                           
                                                   <div class="panel-body">
                                                     
                                                     <div class="row">
                                                             <div class="col-md-12">
-                                                                    <select onchange="updatePlot(this.value)">
+                                                                   <!--  <select onchange="updatePlot(this.value)">
                                                                         <option value="Select Area">Select Area</option>
                                                                         <option value="Bay Area">Bay Area</option>
                                                                         <option value="Alameda">Alameda</option>
@@ -125,23 +127,36 @@
                                                                         <option value="San Mateo">San Mateo</option>
                                                                         <option value="Solano">Solano</option>
                                                                         <option value="Sonoma">Sonoma</option>
-                                                                    </select>
-                                                                    <div id="plotlyPlot"></div>
+                                                                    </select> -->
+                                                                    <div id="plotlyPlot" style = "height:400px"></div>
                                                             </div>
                                                     </div>
                                                     <div class = "row" id="predictionDescription">
-                                                                    <p> What if the wages continue to rise at their current rate and the mortgage rate (30 year fixed) holds steady at 4.46 % ...Can you afford to buy a median price home in the future? Find out here!</p>
+                                                                   
                                                     </div>
 
 
-                                                    <div class = "row">
+                                                    <div class = "row" style = "margin-left: 20px;">
+                                                              <select onchange="updatePlot(this.value)">
+                                                                    <option value="Select Area">Select Area</option>
+                                                                    <option value="Bay Area">Bay Area</option>
+                                                                    <option value="Alameda">Alameda</option>
+                                                                    <option value="Contra Costa">Contra Costa</option>
+                                                                    <option value="Marin">Marin</option>
+                                                                    <option value="Napa">Napa</option>
+                                                                    <option value="San Francisco">San Francisco</option>
+                                                                    <option value="Santa Clara">Santa Clara</option>
+                                                                    <option value="San Mateo">San Mateo</option>
+                                                                    <option value="Solano">Solano</option>
+                                                                    <option value="Sonoma">Sonoma</option>
+                                                                </select>
                                                                 <button id="predictionButton" type="submit reset">Get Prediction</button>
                                                                 <button id="viewAffordability" type="submit reset">View Affodability</button>
                                                                 <!-- <p id="predictionStr"></p> -->
                                                     </div>
                                                     <hr>
                                                     <div class = "row">
-                                                        <p id="predictionStr"></p>
+                                                            <div id="table"></div>
                                                     </div>
                                                 </div>
 
