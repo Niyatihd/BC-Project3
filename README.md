@@ -36,28 +36,28 @@ Possible Visulaizations:
 Median Home Price vs. Average Annual Income(Estimated) vs. Qualifying Income.
 Past observed trends in Median Home Price, Households, Jobs and Income.
 
-Tools used:
+TOOLS USED:
 
-Github 
+    Github 
 
-    Work-flow, partner co-ordination & project compilation
+        Work-flow, partner co-ordination & project compilation
 
-Jupyter notebook, spyder & vs code
+    Jupyter notebook, spyder & vs code
 
-    Data munging, initial machine learning model & coding
+        Data munging, initial machine learning model & coding
 
-Flask, html, css, javascript, bootstrap
+    Flask, html, css, javascript, bootstrap
 
-    Build the interactive prediction App webpage
+        Build the interactive prediction App webpage
 
-Tableau
+    Tableau
 
-    Visualize past data and its trends & plot for user interaction on the webpage
+        Visualize past data and its trends & plot for user interaction on the webpage
 
-Plotly & D3
+    Plotly & D3
 
-     Interactively Plot visualization for future predictions as per user selection on the webpage
- 
+         Interactively Plot visualization for future predictions as per user selection on the webpage
+
 
 ### Project Contributors
 
