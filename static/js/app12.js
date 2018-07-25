@@ -142,8 +142,8 @@ function buildPlot() {
         var income = bayareaData['Bay Area'].income;
         var jobs = bayareaData['Bay Area'].jobs;
         var medianHomePrice = bayareaData['Bay Area'].medianHomePrice;
-        console.log(year, households, income, jobs, medianHomePrice);
-        
+        // console.log(year, households, income, jobs, medianHomePrice);
+        console.log("Initial plot done!!")
     //   function init() {
         var trace1 = {
             type: "scatter",
@@ -230,6 +230,26 @@ function buildPlot() {
         Plotly.newPlot(LINE, newdata, layout);
     }
 
+    // function updatePlotlyPlot2(newdata) {
+    //     console.log(newdata);
+    //     var LINE = document.getElementById("plotlyPlot");
+    //     var layout = {
+    //         title: `Affordability Gap`,
+    //         xaxis: {
+    //             //title: "Year",
+    //             type: "date"
+    //         },
+    //         yaxis: {
+    //            // title: "Percentage Change(%)",
+    //             autorange: true,
+    //             type: "linear"
+    //         },
+    //         showlegend: true,
+    //         legend: {"orientation": "h"}
+    //         };
+    //     Plotly.newPlot(LINE, newdata, layout);
+    // }
+
 buildPlot();               
 
 
@@ -242,7 +262,7 @@ function updatePlot(ddl1) {
     // console.log(selectedArea);
     var selectedAreaObj = {areaselected: selectedArea};
     console.log(selectedAreaObj); 
-    console.log(JSON.stringify(selectedAreaObj)); 
+    // console.log(JSON.stringify(selectedAreaObj)); 
 
     fetch('/predictFuture', {
         body: JSON.stringify(selectedAreaObj), // must match 'Content-Type' header
@@ -266,34 +286,170 @@ function updatePlot(ddl1) {
     var householdCoeff = data.household_wt;
     var wageCoeff = data.wage_wt;
 
-    // Set variable for the button
+    // Set variable for the prediction button
     var buttonClick = document.querySelector("#predictionButton");
 
-    // Add click even listener to the button
+    // Add click even listener to the prediction button
     buttonClick.addEventListener("click", function() {
 
         var predictionString = document.querySelector('#predictionStr');
         predictionString.innerHTML = "Wages: " + (wageCoeff*100).toFixed(0) + "%";
+        // console.log("check wage!!")
 
         Plotly.d3.json("/plot2Data", function(error, response) {
             if (error) return console.warn(error);
-            console.log("for plot2 = " + response);
+            console.log("for plot2 = " + response[userSel].avgAnnualIncome);
+          // Grab values from the response json object to build the plots
+          var year = response[userSel].year;
+          var qualifyingIncome = response[userSel].qualifyingIncome;
+          var avgAnnualIncome = response[userSel].avgAnnualIncome;
+          var medianHomePrice = response[userSel].medianHomePrice;
+        //   console.log(userSel, year, qualifyingIncome, avgAnnualIncome, medianHomePrice);
+            console.log("Values for plot2 check!");
+            var trace1 = {
+                type: "scatter",
+                mode: "lines",
+                name: "Qualifying Income",
+                x: year,
+                y: qualifyingIncome,
+                line: {
+                color: "#17BECF"
+                }
+            };
+    
+            var trace2 = {
+                type: "scatter",
+                mode: "lines",
+                name: "Avg. Annual Income",
+                x: year,
+                y: avgAnnualIncome,
+                line: {
+                color: "red"
+                }
+            };
+    
+            var trace3 = {
+                type: "scatter",
+                mode: "lines",
+                name: "Median Home Price",
+                x: year,
+                y: medianHomePrice,
+                line: {
+                color: "blue"
+                }
+            };
+
+            var data = [trace1, trace2, trace3];
+    
+            var layout = {
+            title: `Affordability Gap`,
+            xaxis: {
+               // title: "Year",
+                type: "date"
+            },
+            yaxis: {
+                //title: "Percentage Change(%)",
+                autorange: true,
+                type: "linear"
+            },
+            showlegend: true,
+            legend: {"orientation": "h"}
+            };
+        
+            Plotly.newPlot("plotlyPlot", data, layout);
+            
         });
 
     });
 
+    //-------------------------------------------------------------------------------------------
+     // Set variable for the affordability button
+     var buttonClick = document.querySelector("#viewAffordability");
+
+     // Add click even listener to the affordability button
+     buttonClick.addEventListener("click", function() {
+ 
+         Plotly.d3.json("/plot2Data", function(error, response) {
+             if (error) return console.warn(error);
+             console.log("for plot2 = " + response[userSel].avgAnnualIncome);
+           // Grab values from the response json object to build the plots
+           var year = response[userSel].year;
+           var qualifyingIncome = response[userSel].qualifyingIncome;
+           var avgAnnualIncome = response[userSel].avgAnnualIncome;
+           var medianHomePrice = response[userSel].medianHomePrice;
+         //   console.log(userSel, year, qualifyingIncome, avgAnnualIncome, medianHomePrice);
+             console.log("Values for plot2 check!");
+             var trace1 = {
+                 type: "scatter",
+                 mode: "lines",
+                 name: "Qualifying Income",
+                 x: year,
+                 y: qualifyingIncome,
+                 line: {
+                 color: "#17BECF"
+                 }
+             };
+     
+             var trace2 = {
+                 type: "scatter",
+                 mode: "lines",
+                 name: "Avg. Annual Income",
+                 x: year,
+                 y: avgAnnualIncome,
+                 line: {
+                 color: "red"
+                 }
+             };
+     
+             var trace3 = {
+                 type: "scatter",
+                 mode: "lines",
+                 name: "Median Home Price",
+                 x: year,
+                 y: medianHomePrice,
+                 line: {
+                 color: "blue"
+                 }
+             };
+ 
+             var data = [trace1, trace2, trace3];
+     
+             var layout = {
+             title: `Affordability Gap`,
+             xaxis: {
+                // title: "Year",
+                 type: "date"
+             },
+             yaxis: {
+                 //title: "Percentage Change(%)",
+                 autorange: true,
+                 type: "linear"
+             },
+             showlegend: true,
+             legend: {"orientation": "h"}
+             };
+         
+             Plotly.newPlot("plotlyPlot", data, layout);
+             
+         });
+ 
+     });
+    //-------------------------------------------------------------------------------------------
+
+
     // function rePlotPlotly() {
         Plotly.d3.json("/plotlyData", function(error, response) {
             if (error) return console.warn(error);
-            console.log(response);
+            // console.log(response);
           // Grab values from the response json object to build the plots
           var year = response[userSel].year;
           var households = response[userSel].household;
           var income = response[userSel].income;
           var jobs = response[userSel].jobs;
           var medianHomePrice = response[userSel].medianHomePrice;
-          console.log(userSel, year, households, income, jobs, medianHomePrice);
-          
+        //   console.log(userSel, year, households, income, jobs, medianHomePrice);
+        console.log(userSel + "for plot1");
+
         //   function init() {
             var trace1 = {
                 type: "scatter",
