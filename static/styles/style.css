@@ -111,6 +111,25 @@
       padding-left: 25px;
   }
 
-  #table {
+#table {
       padding-left: 20px;
+      width: 600px;
   }
+
+th {
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    font-weight: bold;
+}
+
+td {
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    width: 100px;
+}
+
+dataframe{
+    width: 800px;
+    font-size: 12px;
+}
