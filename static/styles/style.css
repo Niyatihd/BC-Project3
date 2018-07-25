@@ -24,9 +24,15 @@
     opacity: 1;
 } */
 
+#introduction {
+    background-color: #fff;
+}
+
+
+
 .jumbotron-billboard .img {
     margin-bottom: 0px;
-    opacity: 0.4;
+    opacity: 0.3;
     color: #fff;
     background: #000 url("../images/titleimage6.jpeg");
     width: 100%;
@@ -69,12 +75,12 @@
 }
     
 .image-head {
-    background-image:url(http://placehold.it/1920x1080);
+    background-image:url("../images/titleimage2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    height: 300px;
-    width: 80%;
+    height: 200px;
+    width: 85%;
     margin: 0;
     padding: 0;
     color: black;
@@ -103,4 +109,8 @@
       font-size: 18px;
       color: darkblue;
       padding-left: 25px;
+  }
+
+  #table {
+      padding-left: 20px;
   }
