@@ -91,7 +91,7 @@
       padding-left: 20px;
       padding-right: 20px;
   }
-  #predictionButton {
+  #predictionButton, #viewAffordability {
       margin-left: 25px;
       background-color: darkcyan;
       color: white;
