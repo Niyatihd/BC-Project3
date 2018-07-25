@@ -120,12 +120,13 @@ def predictprice():
         ForecastDF["MthlyMinIncome"]=  np.round(ForecastDF["MthlyHousingCost"]/0.3)
         ForecastDF["Qualifying Income"] = ForecastDF["MthlyMinIncome"]*12
         ForecastDF = ForecastDF[["Year","Avg.Median Home price","Qualifying Income","AvgAnnualPay"]]
-        ForecastDF
+        ForecastDF = ForecastDF.round()
         
         ForecastDF.set_index('Year',inplace=True)
         ForecastDFTransposed = ForecastDF.transpose()
         ForecastDFTransposed = ForecastDFTransposed.round()
-        return jsonify(ForecastDFTransposed.to_html())    
+        #return jsonify(ForecastDFTransposed.to_html())   
+        return jsonify(ForecastDFTransposed.to_dict('records'))
     #result = {"employees_wt":Employees_wt, "household_wt":Household_wt, "wage_wt":Wage_wt, "y_intercept":y_intercept}
             #print(result)
 

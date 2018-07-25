@@ -19,7 +19,7 @@ Hypothesis: The reason for the astronomical rise in the housing prices in the ba
 
 
 ### Dataset
-    Sources: California Association of Realtors[CAR]      
+    Sources: California Association of Realtors[CAR)     
              Zillow - Housing Estimates,
              US Census Bureau
              Bureau of Labor Statistics

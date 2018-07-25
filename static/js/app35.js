@@ -294,14 +294,26 @@ function updatePlot(ddl1) {
     // Add click even listener to the prediction button
     buttonClick.addEventListener("click", function() {
 
-        var predictionTable= document.querySelector('#table');
-
-        //textclean= data.replace(/"/g,' ');
-        //textclean2 = textclean.replace(/\\n/g,'');
-        //predictionTable.innerHTML = textclean2;;
+        var predictionTable= document.querySelector('tbody');
+        var rowheadings = ["Median Home Price","Qualifying Income", "Est. Annual Pay"]
+        var columnheadings = ["2020","2025","2030","2035","2040"]
         //predictionTable.innerHTML = data;
-    
+        console.log(data.length);
+        for (var i = 0; i < data.length; i++) {
+                // Insert a row into the table at position i
+            var $row = predictionTable.insertRow(i);
+            // Insert cells into the newly created row
+            console.log(data[i]);
 
+            $row.insertCell(0).innerText = rowheadings[i]
+            $row.insertCell(1).innerText = data[i][columnheadings[0]]
+            $row.insertCell(2).innerText = data[i][columnheadings[1]]
+            $row.insertCell(3).innerText = data[i][columnheadings[2]]
+            $row.insertCell(4).innerText = data[i][columnheadings[3]]
+            $row.insertCell(5).innerText = data[i][columnheadings[4]]
+                
+
+        }
 
 
         console.log(data)

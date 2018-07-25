@@ -300,7 +300,18 @@ function updatePlot(ddl1) {
         //textclean2 = textclean.replace(/\\n/g,'');
         //predictionTable.innerHTML = textclean2;;
         //predictionTable.innerHTML = data;
+        for (var i = 0; i < data.length; i++) {
+            // Insert a row into the table at position i
+            var $row = $predictionTable.insertRow(i);
+            // Insert cells into the newly created row
+            var rowEntry = Object.values(data[i])
+          //console.log(rowEntry.length);
+          for (var j = 0; j < rowEntry.length; j++) {
     
+              var $cell = $row.insertCell(j);
+              $cell.innerText = rowEntry[j]; 
+            } 
+          }
 
 
 
