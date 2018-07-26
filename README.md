@@ -28,6 +28,8 @@ Some of the factors that influence Housing affordability and Median home prices 
     Location: resources/data/..
 
 ### Project Presentation
+https://github.com/Niyatihd/BC-Project3/blob/master/BC_Project3_presentation.pdf
+
 The interactive app will help user to predict Median Housing price at Bay Area level as well as County level for future years
 at 5 year intervals.
 
