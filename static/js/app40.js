@@ -276,11 +276,13 @@ function updatePlot(ddl1) {
         return response.json();
     })
     .then((data) => {
-        console.log(data);
+        // console.log(data);
         return data;
     })
     .then((data) => {
-    
+        console.log(data);
+        console.log(Object.keys(data).length);
+
     //var empCoeff = data.employees_wt;
     //console.log("empCoeff is: " + empCoeff);
     //var householdCoeff = data.household_wt;
@@ -294,13 +296,13 @@ function updatePlot(ddl1) {
     // Add click even listener to the prediction button
     buttonClick.addEventListener("click", function() {
 
-        var predictionTable= document.querySelector('tbody');
+        var predictionTable = document.querySelector('tbody');
         predictionTable.innerHTML = "";
         var rowheadings = ["Median Home Price","Qualifying Income", "Est. Annual Pay"]
         var columnheadings = ["2020","2025","2030","2035","2040"]
-        //predictionTable.innerHTML = data;
-        console.log(data.length);
-        for (var i = 0; i < data.length; i++) {
+        predictionTable.innerHTML = data;//-------
+        var dataLen = Object.keys(data).length;
+        for (var i = 0; i < dataLen; i++) {
                 // Insert a row into the table at position i
             var $row = predictionTable.insertRow(i);
             // Insert cells into the newly created row
@@ -318,7 +320,7 @@ function updatePlot(ddl1) {
         }
 
 
-        console.log(data)
+        // console.log(data)
 
         Plotly.d3.json("/plot2Data", function(error, response) {
             if (error) return console.warn(error);
