@@ -100,7 +100,7 @@ Markdown==2.6.11
 MarkupSafe==1.0
 matplotlib==2.1.0
 mccabe==0.6.1
-mistune==0.8.3
+mistune==2.0.3
 mpld3==0.3
 mpmath==0.19
 mrjob==0.6.3
