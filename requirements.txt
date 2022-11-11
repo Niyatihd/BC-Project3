@@ -159,7 +159,7 @@ pyOpenSSL==17.2.0
 pyparsing==2.2.0
 PyQt5==5.9.2
 PySocks==1.6.7
-pyspark==2.3.1
+pyspark==3.2.2
 pytest==3.2.1
 python-dateutil==2.6.1
 pytz==2018.3
